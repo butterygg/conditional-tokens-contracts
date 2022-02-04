@@ -7,6 +7,11 @@ __pycache__/
 # C extensions
 *.so
 
+artifacts
+cache
+.vscode
+typechain
+
 # Distribution / packaging
 .Python
 env/
