@@ -29,6 +29,7 @@ const config: HardhatUserConfig = {
         rinkeby: { accounts, ...getRemoteNetworkConfig("rinkeby") },
         ropsten: { accounts, ...getRemoteNetworkConfig("ropsten") },
         matic: { accounts, ...getRemoteNetworkConfig("matic"), gasPrice: 8000000000 },
+        "unichain-sepolia": { accounts, ...getRemoteNetworkConfig("unichain-sepolia") },
     },
     paths: {
         artifacts: "./artifacts",
