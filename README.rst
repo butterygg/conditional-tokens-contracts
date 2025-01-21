@@ -23,6 +23,16 @@ The conditional tokens contracts are deployed at the following addresses:
 * Unichain Sepolia: ```0x1301d3c29a8723fae7ee1343203ea16bd7845996```
 
 
+How to deploy
+-------------
+
+1. Set `MNEMONIC` and `INFURA_API_KEY` in `.env`.
+2. Deploy with Hardhat:
+
+```sh
+npx hardhat deploy --network unichain-sepolia
+```
+
 License
 -------
 
