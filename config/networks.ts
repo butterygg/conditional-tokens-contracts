@@ -12,12 +12,13 @@ export enum ChainId {
     ropsten = 3,
     xdai = 100,
     "unichain-sepolia" = 1301,
+    "unichain-mainnet" = 130,
 }
 
 // Delegate requests for a network config to a provider specific function based on which networks they serve
 
 // Ethereum
-const infuraChains = ["goerli", "kovan", "mainnet", "rinkeby", "ropsten", "unichain-sepolia"] as const;
+const infuraChains = ["goerli", "kovan", "mainnet", "rinkeby", "ropsten", "unichain-sepolia", "unichain-mainnet"] as const;
 type InfuraChain = typeof infuraChains[number];
 const getInfuraConfig = (network: InfuraChain): { url: string; chainId: number } => {
     if (!process.env.INFURA_API_KEY) {

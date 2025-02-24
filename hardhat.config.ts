@@ -30,6 +30,7 @@ const config: HardhatUserConfig = {
         ropsten: { accounts, ...getRemoteNetworkConfig("ropsten") },
         matic: { accounts, ...getRemoteNetworkConfig("matic"), gasPrice: 8000000000 },
         "unichain-sepolia": { accounts, ...getRemoteNetworkConfig("unichain-sepolia") },
+        "unichain-mainnet": { accounts, ...getRemoteNetworkConfig("unichain-mainnet") },
     },
     paths: {
         artifacts: "./artifacts",
